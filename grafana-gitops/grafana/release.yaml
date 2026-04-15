@@ -1,0 +1,23 @@
+apiVersion: helm.crossplane.io/v1beta1
+kind: Release
+metadata:
+  name: grafana
+spec:
+  providerConfigRef:
+    name: default
+  forProvider:
+    chart:
+      name: grafana
+      repository: https://grafana.github.io/helm-charts
+      version: "8.0.0"
+    namespace: grafana
+    values:
+      service:
+        type: NodePort
+      adminPassword: "admin123"
+      persistence:
+        enabled: false
+      resources:
+        limits:
+          cpu: 200m
+          memory: 256Mi
