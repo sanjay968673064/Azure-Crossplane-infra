@@ -1,0 +1,10 @@
+# resourcegroup.yaml
+apiVersion: azure.upbound.io/v1beta1
+kind: ResourceGroup
+metadata:
+  name: docs-quickstart-rg-new
+spec:
+  providerConfigRef:
+    name: default
+  forProvider:
+    location: Sweden Central

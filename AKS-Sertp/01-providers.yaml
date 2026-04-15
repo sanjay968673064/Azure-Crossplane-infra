@@ -1,0 +1,51 @@
+# 1. CORE
+apiVersion: pkg.crossplane.io/v1
+kind: Provider
+metadata:
+  name: provider-family-azure
+spec:
+  package: xpkg.upbound.io/upbound/provider-family-azure:v2.5.2
+
+---
+# 2. RESOURCE GROUP
+apiVersion: pkg.crossplane.io/v1
+kind: Provider
+metadata:
+  name: provider-azure-resources
+spec:
+  package: xpkg.upbound.io/upbound/provider-azure-resources:v2.5.2
+
+---
+# 3. NETWORKING
+apiVersion: pkg.crossplane.io/v1
+kind: Provider
+metadata:
+  name: provider-azure-network
+spec:
+  package: xpkg.upbound.io/upbound/provider-azure-network:v2.5.2
+
+---
+# 4. AKS CLUSTER
+apiVersion: pkg.crossplane.io/v1
+kind: Provider
+metadata:
+  name: provider-azure-containerservice
+spec:
+  package: xpkg.upbound.io/upbound/provider-azure-containerservice:v2.5.2
+
+---
+# 5. MANAGED IDENTITY
+apiVersion: pkg.crossplane.io/v1
+kind: Provider
+metadata:
+  name: provider-azure-managedidentity
+spec:
+  package: xpkg.upbound.io/upbound/provider-azure-managedidentity:v2.5.2
+
+  # 6 P From chat
+  apiVersion: pkg.crossplane.io/v1
+kind: Provider
+metadata:
+  name: provider-azure
+spec:
+  package: xpkg.upbound.io/upbound/provider-azure:v1.0.0 

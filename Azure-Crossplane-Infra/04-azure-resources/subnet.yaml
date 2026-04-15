@@ -1,0 +1,13 @@
+# subnet.yaml
+apiVersion: network.azure.upbound.io/v1beta1
+kind: Subnet
+metadata:
+  name: crossplane-quickstart-subnet
+spec:
+  providerConfigRef:
+    name: default
+  forProvider:
+    addressPrefixes:
+      - 10.0.1.0/24
+    resourceGroupName: docs-quickstart-rg-new
+    virtualNetworkName: crossplane-quickstart-network

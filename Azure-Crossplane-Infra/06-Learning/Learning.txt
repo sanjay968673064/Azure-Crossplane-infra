@@ -1,0 +1,4 @@
+##Enable the Network provider using below cmomand. some time nw will not create if network resource is not enabled
+
+az provider register --namespace Microsoft.Network
+########################################################################################################################

@@ -1,0 +1,7 @@
+# provider-containerservice.yaml
+apiVersion: pkg.crossplane.io/v1
+kind: Provider
+metadata:
+  name: provider-azure-containerservice
+spec:
+  package: xpkg.upbound.io/upbound/provider-azure-containerservice:v1.11.2
